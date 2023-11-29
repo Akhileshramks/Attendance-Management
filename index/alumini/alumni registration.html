@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head><title>Alumini Registration</title>
+</head>
+<style>
+    body {
+  background-image: url('img1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.c3 {
+ background-color:#f2e1e1a8;
+ width: 500px;
+ margin: 0 auto;
+ padding: 50px;
+} 
+div.c1 {
+ margin: 20px 0;
+}
+div.c2 {
+ width: 49%;
+ display: inline-block;
+ float: left;
+ margin-left: 1%;
+}
+label {
+ display: block;
+ font-family: 'Nanum Gothic';
+ padding-bottom: 10px;
+ font-size: 1.25em;
+}
+ .c4,select, textarea {
+ border-radius: 2px;
+ border: 2px solid #777;
+ box-sizing: border-box;
+ font-size: 1.25em;
+ font-family: 'Nanum Gothic';
+ width: 100%;
+ padding: 10px;
+}
+div.c2 input {
+ width: 95%;
+ display: inline-block;
+}
+textarea {
+ height: 140px;
+}
+hr {
+ border: 1px dotted #ccc;
+}
+button {
+ height: 50px;
+ background: orange;
+ border: none;
+ color: white;
+ font-size: 1.25em;
+ font-family: 'Nanum Gothic';
+ border-radius: 4px;
+ cursor: pointer;
+}
+button:hover {
+ border: 2px solid black;
+}
+</style>
+<div style="color:azure"><center><h1>Alumini Registration</h1></center></div>
+<body>
+<form action="regis.php" method="post" class="c3">
+<div class="c1">
+<label for="name">Your Name</label>
+<input type="text" id="name" name="name" class="c4" placeholder="Enter your name">
+</div>
+<div>
+    <label for="gender">Gender</label>
+    <input type="radio"  id="gender" name="gender" value="Male"><big>Male</big><br>
+    <input type="radio" id="gender" name="gender"  value="Female"><big>Female</big>
+</div>
+<div class="c1">
+<label for="email">Your E-mail</label>
+<input type="email" id="email" name="email" class="c4" placeholder="Enter a valid email">
+</div>
+<div class="c2">
+<label for="pass">Your Password</label>
+<input type="password" id="pass" name="pass" class="c4" placeholder="Enter your password">
+</div>
+<div class="c2">
+    <label for="repass"> Enter Repassword</label>
+<input type="password" id="repass" name="repass" class="c4" placeholder="Enter your password again">
+</div>
+<hr>
+<div class="c1">
+<label for="phone">Your Phone</label>
+<input type="tel" id="phone" name="phone" class="c4" placeholder="Enter your phone number">
+</div>
+<div class="c1">
+   <label for="interest">Your Interest</label>
+   <center><input type="checkbox" id="interest" name="interest[]" value="Dance" ><big>Dancing</big><br>
+    <input type="checkbox" id="interest" name="interest[]" value="Writing" ><big>Writing</big><br>
+    <input type="checkbox" id="interest" name="interest[]" value="Speaking" ><big>Speaking</big><br>
+    <input type="checkbox" id="interest" name="interest[]" value="Singing" ><big>Singing</big><br></center>
+</div>
+<hr>
+<div class="c1">
+    <label for="registerno">Register Number</label>
+    <input type="text" id="registerno" class="c4" name="registerno" placeholder="202X50X0XX">
+</div>
+<div class="c2">
+<label for="yearofjoining">Year of Joining</label>
+<input type="month" id="yearofjoining" class="c4" name="joinyear">
+</div>
+<div class="c2">
+<label for="yearofpassing">Year of Passing</label>
+<input type="month" id="yearofpassing" class="c4" name="passyear">
+</div>
+<div class="c1">
+<label for="dept">Departments</label>
+<select id="dept" name="dept">
+<option value="">Choose your Department</option>
+<option value="Information Technology">Information Technology</option>
+<option value="Computer Technology">Computer Technology</option>
+<option value="Electronis Engineering">Electronis Engineering</option>
+</select>
+</div>
+<hr>
+<div class="c1">
+<label for="address">Address for communication?</label>
+<textarea id="address" name="address" placeholder="Type your Address"></textarea>
+</div>
+<center><button type="submit" name="submit">Submit</button></center>
+</form>
